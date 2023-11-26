@@ -62,3 +62,10 @@ axios.get(`https://aniwave.to/filter?keyword=${keyword}`)
     .catch(e => {
         console.log(e);
     });
+
+/*
+  next we need to make a get request using the links in animeList
+  within each episode, we must grab the players and download the episode
+  then, we extract the link and return it as a string
+  the string is then provided to the discord bot and the discord bot sends it as an embed
+*/
